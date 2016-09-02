@@ -15,4 +15,4 @@
 
 //当前系统的主题配置
 
-#define GFMainThemeColor
+#define GFMainThemeColor [UIColor redColor]

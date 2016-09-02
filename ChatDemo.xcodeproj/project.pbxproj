@@ -19,6 +19,8 @@
 		FC249FC41D79DB0A0066AB60 /* GFNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC249FC31D79DB0A0066AB60 /* GFNavigationController.m */; };
 		FC249FD01D79DD400066AB60 /* GFNetworkConst.m in Sources */ = {isa = PBXBuildFile; fileRef = FC249FCF1D79DD400066AB60 /* GFNetworkConst.m */; };
 		FC249FDA1D79E2430066AB60 /* GFHomeChatTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC249FD91D79E2430066AB60 /* GFHomeChatTableViewController.m */; };
+		FC249FE01D79E7500066AB60 /* UIBarButtonItem+GFBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FC249FDF1D79E7500066AB60 /* UIBarButtonItem+GFBarButtonItem.m */; };
+		FC249FE41D79E84C0066AB60 /* UIImage+GFImage.m in Sources */ = {isa = PBXBuildFile; fileRef = FC249FE31D79E84C0066AB60 /* UIImage+GFImage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +64,11 @@
 		FC249FD31D79DEB00066AB60 /* GFSystemDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GFSystemDefine.h; sourceTree = "<group>"; };
 		FC249FD81D79E2430066AB60 /* GFHomeChatTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFHomeChatTableViewController.h; sourceTree = "<group>"; };
 		FC249FD91D79E2430066AB60 /* GFHomeChatTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFHomeChatTableViewController.m; sourceTree = "<group>"; };
+		FC249FDE1D79E7500066AB60 /* UIBarButtonItem+GFBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+GFBarButtonItem.h"; sourceTree = "<group>"; };
+		FC249FDF1D79E7500066AB60 /* UIBarButtonItem+GFBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+GFBarButtonItem.m"; sourceTree = "<group>"; };
+		FC249FE11D79E7650066AB60 /* GFCategoryHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GFCategoryHeader.h; sourceTree = "<group>"; };
+		FC249FE21D79E84C0066AB60 /* UIImage+GFImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+GFImage.h"; sourceTree = "<group>"; };
+		FC249FE31D79E84C0066AB60 /* UIImage+GFImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+GFImage.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +110,7 @@
 		FC249F8B1D79D8800066AB60 /* ChatDemo */ = {
 			isa = PBXGroup;
 			children = (
+				FC249FDB1D79E7390066AB60 /* Library */,
 				FC249FD41D79E2140066AB60 /* Class */,
 				FC249FC91D79DC2C0066AB60 /* Config */,
 				FC249FB21D79D9140066AB60 /* Base */,
@@ -238,6 +246,34 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		FC249FDB1D79E7390066AB60 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				FC249FDC1D79E7390066AB60 /* Category */,
+				FC249FDD1D79E7390066AB60 /* ThirdSDK */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		FC249FDC1D79E7390066AB60 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				FC249FDE1D79E7500066AB60 /* UIBarButtonItem+GFBarButtonItem.h */,
+				FC249FDF1D79E7500066AB60 /* UIBarButtonItem+GFBarButtonItem.m */,
+				FC249FE21D79E84C0066AB60 /* UIImage+GFImage.h */,
+				FC249FE31D79E84C0066AB60 /* UIImage+GFImage.m */,
+				FC249FE11D79E7650066AB60 /* GFCategoryHeader.h */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		FC249FDD1D79E7390066AB60 /* ThirdSDK */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ThirdSDK;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -339,6 +375,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC249FE41D79E84C0066AB60 /* UIImage+GFImage.m in Sources */,
 				FC249FB81D79D9410066AB60 /* GFBaseViewController.m in Sources */,
 				FC249FD01D79DD400066AB60 /* GFNetworkConst.m in Sources */,
 				FC249FDA1D79E2430066AB60 /* GFHomeChatTableViewController.m in Sources */,
@@ -347,6 +384,7 @@
 				FC249FBE1D79D97C0066AB60 /* GFBaseView.m in Sources */,
 				FC249FC11D79D9920066AB60 /* GFBaseModel.m in Sources */,
 				FC249F911D79D8800066AB60 /* AppDelegate.m in Sources */,
+				FC249FE01D79E7500066AB60 /* UIBarButtonItem+GFBarButtonItem.m in Sources */,
 				FC249F8E1D79D8800066AB60 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -475,6 +513,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = ChatDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = goofyy.com.ChatDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -490,6 +529,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT)/GFPrefixHeader.pch";
 				INFOPLIST_FILE = ChatDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = goofyy.com.ChatDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
