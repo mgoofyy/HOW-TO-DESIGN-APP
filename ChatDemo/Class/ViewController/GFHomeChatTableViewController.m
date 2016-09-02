@@ -7,7 +7,41 @@
 //
 
 #import "GFHomeChatTableViewController.h"
+#import "GFChatTitleView.h"
+
+@interface GFHomeChatTableViewController()
+
+@property (nonatomic,strong) GFChatTitleView *navigationTitleView;
+
+@end
+
 
 @implementation GFHomeChatTableViewController
+
+#pragma mark - lazy load 
+
+
+#pragma mark - configView
+- (void)configView {
+    
+    
+}
+
+- (void)configNavigation {
+    _navigationTitleView = [[GFChatTitleView alloc] initWithFrame:CGRectMake(50, 5, SCREEN_WIDTH - 100, 40)];
+    self.navigationItem.titleView = self.navigationTitleView;
+    _navigationTitleView.mainTitle = @"我是一个小黄瓜";
+    _navigationTitleView.subTitle = @"4G在线";
+}
+
+#pragma mark - system load function
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    [self configView];
+    [self configNavigation];
+}
+
 
 @end

@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+typedef void (^TouchCurrentView)(void);
 @interface GFBaseView : UIView
+
+@property (nonatomic,copy) TouchCurrentView touchCurrentView;
 
 @end

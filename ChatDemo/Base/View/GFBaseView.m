@@ -8,6 +8,43 @@
 
 #import "GFBaseView.h"
 
+@interface GFBaseView()<UIGestureRecognizerDelegate>
+
+@end
+
 @implementation GFBaseView
+
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        
+    }
+    return self;
+}
+
+
+- (instancetype)initWithFrame:(CGRect)frame
+{
+    self = [super initWithFrame:frame];
+    if (self) {
+        
+    }
+    return self;
+}
+
+- (void)configGestureRecognize {
+    UITapGestureRecognizer* tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(signalGestureAction)];
+    tapGesture.delegate = self;
+    tapGesture.numberOfTapsRequired = 1;
+    tapGesture.numberOfTouchesRequired = 1;
+    [self addGestureRecognizer:tapGesture];
+}
+
+#pragma mark - action 
+
+- (void)signalGestureAction {
+    !_touchCurrentView ? : _touchCurrentView();
+}
 
 @end

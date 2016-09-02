@@ -10,4 +10,5 @@
 
 @interface GFBaseTableViewController : GFBaseViewController
 
+
 @end
