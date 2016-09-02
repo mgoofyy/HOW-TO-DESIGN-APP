@@ -16,6 +16,9 @@
 		FC249FBB1D79D9630066AB60 /* GFBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC249FBA1D79D9630066AB60 /* GFBaseTableViewController.m */; };
 		FC249FBE1D79D97C0066AB60 /* GFBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = FC249FBD1D79D97C0066AB60 /* GFBaseView.m */; };
 		FC249FC11D79D9920066AB60 /* GFBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FC249FC01D79D9920066AB60 /* GFBaseModel.m */; };
+		FC249FC41D79DB0A0066AB60 /* GFNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC249FC31D79DB0A0066AB60 /* GFNavigationController.m */; };
+		FC249FD01D79DD400066AB60 /* GFNetworkConst.m in Sources */ = {isa = PBXBuildFile; fileRef = FC249FCF1D79DD400066AB60 /* GFNetworkConst.m */; };
+		FC249FDA1D79E2430066AB60 /* GFHomeChatTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC249FD91D79E2430066AB60 /* GFHomeChatTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,18 @@
 		FC249FBD1D79D97C0066AB60 /* GFBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFBaseView.m; sourceTree = "<group>"; };
 		FC249FBF1D79D9920066AB60 /* GFBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFBaseModel.h; sourceTree = "<group>"; };
 		FC249FC01D79D9920066AB60 /* GFBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFBaseModel.m; sourceTree = "<group>"; };
+		FC249FC21D79DB0A0066AB60 /* GFNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFNavigationController.h; sourceTree = "<group>"; };
+		FC249FC31D79DB0A0066AB60 /* GFNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFNavigationController.m; sourceTree = "<group>"; };
+		FC249FC51D79DB7C0066AB60 /* GFPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GFPrefixHeader.pch; sourceTree = "<group>"; };
+		FC249FCC1D79DC450066AB60 /* GFThemeColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GFThemeColor.h; sourceTree = "<group>"; };
+		FC249FCD1D79DC6B0066AB60 /* GFSystemView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GFSystemView.h; sourceTree = "<group>"; };
+		FC249FCE1D79DD400066AB60 /* GFNetworkConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFNetworkConst.h; sourceTree = "<group>"; };
+		FC249FCF1D79DD400066AB60 /* GFNetworkConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFNetworkConst.m; sourceTree = "<group>"; };
+		FC249FD11D79DD8A0066AB60 /* GFNotificationNameConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GFNotificationNameConst.h; sourceTree = "<group>"; };
+		FC249FD21D79DDC20066AB60 /* GFErrorWarningMessageConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GFErrorWarningMessageConst.h; sourceTree = "<group>"; };
+		FC249FD31D79DEB00066AB60 /* GFSystemDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GFSystemDefine.h; sourceTree = "<group>"; };
+		FC249FD81D79E2430066AB60 /* GFHomeChatTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFHomeChatTableViewController.h; sourceTree = "<group>"; };
+		FC249FD91D79E2430066AB60 /* GFHomeChatTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFHomeChatTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,9 +103,12 @@
 		FC249F8B1D79D8800066AB60 /* ChatDemo */ = {
 			isa = PBXGroup;
 			children = (
+				FC249FD41D79E2140066AB60 /* Class */,
+				FC249FC91D79DC2C0066AB60 /* Config */,
 				FC249FB21D79D9140066AB60 /* Base */,
 				FC249F8F1D79D8800066AB60 /* AppDelegate.h */,
 				FC249F901D79D8800066AB60 /* AppDelegate.m */,
+				FC249FC51D79DB7C0066AB60 /* GFPrefixHeader.pch */,
 				FC249F981D79D8800066AB60 /* Assets.xcassets */,
 				FC249F9A1D79D8800066AB60 /* LaunchScreen.storyboard */,
 				FC249F9D1D79D8800066AB60 /* Info.plist */,
@@ -151,8 +169,73 @@
 				FC249FB71D79D9410066AB60 /* GFBaseViewController.m */,
 				FC249FB91D79D9630066AB60 /* GFBaseTableViewController.h */,
 				FC249FBA1D79D9630066AB60 /* GFBaseTableViewController.m */,
+				FC249FC21D79DB0A0066AB60 /* GFNavigationController.h */,
+				FC249FC31D79DB0A0066AB60 /* GFNavigationController.m */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		FC249FC91D79DC2C0066AB60 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				FC249FCA1D79DC2C0066AB60 /* Define */,
+				FC249FCB1D79DC2C0066AB60 /* NET */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		FC249FCA1D79DC2C0066AB60 /* Define */ = {
+			isa = PBXGroup;
+			children = (
+				FC249FCC1D79DC450066AB60 /* GFThemeColor.h */,
+				FC249FCD1D79DC6B0066AB60 /* GFSystemView.h */,
+				FC249FD11D79DD8A0066AB60 /* GFNotificationNameConst.h */,
+				FC249FD21D79DDC20066AB60 /* GFErrorWarningMessageConst.h */,
+				FC249FD31D79DEB00066AB60 /* GFSystemDefine.h */,
+			);
+			path = Define;
+			sourceTree = "<group>";
+		};
+		FC249FCB1D79DC2C0066AB60 /* NET */ = {
+			isa = PBXGroup;
+			children = (
+				FC249FCE1D79DD400066AB60 /* GFNetworkConst.h */,
+				FC249FCF1D79DD400066AB60 /* GFNetworkConst.m */,
+			);
+			path = NET;
+			sourceTree = "<group>";
+		};
+		FC249FD41D79E2140066AB60 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				FC249FD51D79E2140066AB60 /* View */,
+				FC249FD61D79E2140066AB60 /* ViewController */,
+				FC249FD71D79E2140066AB60 /* ViewModel */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		FC249FD51D79E2140066AB60 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FC249FD61D79E2140066AB60 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FC249FD81D79E2430066AB60 /* GFHomeChatTableViewController.h */,
+				FC249FD91D79E2430066AB60 /* GFHomeChatTableViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		FC249FD71D79E2140066AB60 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,6 +288,7 @@
 				TargetAttributes = {
 					FC249F881D79D8800066AB60 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 8834V5NS5J;
 					};
 					FC249FA11D79D8800066AB60 = {
 						CreatedOnToolsVersion = 7.3;
@@ -256,7 +340,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC249FB81D79D9410066AB60 /* GFBaseViewController.m in Sources */,
+				FC249FD01D79DD400066AB60 /* GFNetworkConst.m in Sources */,
+				FC249FDA1D79E2430066AB60 /* GFHomeChatTableViewController.m in Sources */,
 				FC249FBB1D79D9630066AB60 /* GFBaseTableViewController.m in Sources */,
+				FC249FC41D79DB0A0066AB60 /* GFNavigationController.m in Sources */,
 				FC249FBE1D79D97C0066AB60 /* GFBaseView.m in Sources */,
 				FC249FC11D79D9920066AB60 /* GFBaseModel.m in Sources */,
 				FC249F911D79D8800066AB60 /* AppDelegate.m in Sources */,
@@ -380,10 +467,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT)/GFPrefixHeader.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"COFFEE_DEBUG=1",
+					"$(inherited)",
+				);
 				INFOPLIST_FILE = ChatDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = goofyy.com.ChatDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -391,10 +486,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT)/GFPrefixHeader.pch";
 				INFOPLIST_FILE = ChatDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = goofyy.com.ChatDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

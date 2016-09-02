@@ -1,0 +1,24 @@
+//
+//  GFPrefixHeader.pch
+//  ChatDemo
+//
+//  Created by goofygao on 9/3/16.
+//  Copyright © 2016 goofyy. All rights reserved.
+//
+
+#ifndef GFPrefixHeader_pch
+#define GFPrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* GFPrefixHeader_pch */
+
+//config
+
+#import "GFThemeColor.h"
+#import "GFSystemView.h"
+#import "GFNotificationNameConst.h"
+#import "GFErrorWarningMessageConst.h"
+#import "GFSystemDefine.h"
+#import "GFNetworkConst.h"

@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface GFBaseView : UIVieW
+@interface GFBaseView : UIView
 
 @end
