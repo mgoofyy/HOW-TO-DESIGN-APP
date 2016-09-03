@@ -72,6 +72,21 @@
     _chatTextView.font = [UIFont systemFontOfSize:16];
     _chatTextView.returnKeyType = UIReturnKeySend;
     
+    [_audioButton setBackgroundImage:[UIImage imageNamed:@"voice_send_back_normal"] forState:UIControlStateNormal];
+    [_audioButton setBackgroundImage:[UIImage imageNamed:@"voice_send_back_select"] forState:UIControlStateHighlighted];
+    [_audioButton setTitle:@"按住 说话" forState:UIControlStateNormal];
+    [_audioButton setTitle:@"松开 结束" forState:UIControlStateHighlighted];
+    _audioButton.titleLabel.font = [UIFont systemFontOfSize:16];
+    [_audioButton setTitleColor:GFTextImpotColor02 forState:UIControlStateNormal];
+    [_audioButton setTitleColor:GFTextImpotColor02 forState:UIControlStateHighlighted];
+    [_audioButton kc_setLayerCornerRadiusWithClips:4.0];
+//    [_audioButton addTarget:self action:@selector(bottomToolClick:) forControlEvents:UIControlEventTouchUpInside];
+//    [_audioButton addTarget:self action:@selector(voiceSendTouchDown:) forControlEvents:UIControlEventTouchDown];
+//    [_audioButton addTarget:self action:@selector(voiceSendTouchDragIn:) forControlEvents:UIControlEventTouchDragInside];
+//    [_audioButton addTarget:self action:@selector(voiceSendTouchDragOut:) forControlEvents:UIControlEventTouchDragOutside];
+//    [_audioButton addTarget:self action:@selector(voiceSendTouchOut:) forControlEvents:UIControlEventTouchUpOutside];
+    _audioButton.hidden = YES;
+    
     [_changeButton mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.mas_equalTo(5);
         make.centerY.mas_equalTo(self.mas_centerY);
@@ -96,12 +111,21 @@
         make.top.mas_equalTo(_changeButton.mas_top).offset(-2);
         make.bottom.mas_equalTo(_changeButton.mas_bottom).offset(2);
     }];
+    
+    [_audioButton mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.mas_equalTo(_changeButton.mas_right).offset(10);
+        make.right.mas_equalTo(_emojiButton.mas_left).offset(-10);
+        make.top.mas_equalTo(_changeButton.mas_top).offset(-2);
+        make.bottom.mas_equalTo(_changeButton.mas_bottom).offset(2);
+    }];
 }
 
 #pragma mark - action
 
 - (void)changeInputTypeAction:(UIButton *)sender {
     sender.selected = !sender.isSelected;
+    _chatTextView.hidden = sender.isSelected;
+    _audioButton.hidden = !sender.isSelected;
 }
 
 - (void)emojiAction:(UIButton *)sender {

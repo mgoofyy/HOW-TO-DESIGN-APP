@@ -25,7 +25,7 @@
 //和当前主题颜色相同的文字颜色
 #define GFTextImpotColor01        GFMainThemeColor
 //近黑色 表示重要的文本
-#define GFTextImpotColor02        GFColorFromHex(0x323232)
+#define GFTextImpotColor02        GFColorFromHex(0x333333)
 
 //常规颜色 - 用于副标题展示
 #define GFTextNormalColor01       GFColorFromHex(0x666666)
