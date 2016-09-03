@@ -25,7 +25,7 @@
 
 #pragma mark - configView
 - (void)configView {
-    self.backgroundImage = [UIImage imageNamed:@"chat_bg_01"];
+//    self.backgroundImage = [UIImage imageNamed:@"chat_bg_01"];
     
 }
 
@@ -43,11 +43,16 @@
 - (void)configChatInputView {
     _chatInputView = [[GFChatInputView alloc] init];
     [self.view addSubview:self.chatInputView];
+    _chatInputView.userInteractionEnabled = YES;
+    _chatInputView.backgroundColor = GFMainThemeColor;
     
-    _chatInputView.backgroundColor = [UIColor redColor];
+    _chatInputView.touchCurrentView = ^ {
+      NSLog(@"___________%s",__func__);
+    };
+    
     [_chatInputView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.right.bottom.mas_equalTo(0);
-        make.height.mas_equalTo(44);
+        make.height.mas_equalTo(46);
     }];
 }
 

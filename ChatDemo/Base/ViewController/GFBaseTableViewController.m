@@ -20,9 +20,9 @@
     if (!_tableView) {
         _tableView = [[UITableView alloc] init];
         _tableView.delegate = self;
-        _tableView.separatorColor = nil;
-        _tableView.backgroundColor = nil;
-        _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+//        _tableView.separatorColor = nil;
+//        _tableView.backgroundColor = nil;
+//        _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     }
     return _tableView;
 }

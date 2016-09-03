@@ -28,7 +28,7 @@
 
 #pragma mark - configView
 - (void)configBackgroundView {
-    self.view = self.backgroundImageView;
+    [self.view addSubview:self.backgroundImageView];
     self.backgroundImageView.frame = self.view.bounds;
 }
 
@@ -36,7 +36,7 @@
 
 - (void)setBackgroundImage:(UIImage *)backgroundImage {
     _backgroundImageView.image = backgroundImage;
-    _backgroundImageView.contentMode = UIViewContentModeScaleAspectFill;
+    _backgroundImageView.contentMode = UIViewContentModeScaleToFill;
     [_backgroundImageView sizeToFit];
     
 }

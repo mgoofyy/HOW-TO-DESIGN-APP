@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		E8C78660035BB674B6CC7564 /* libPods-ChatDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FD225981A975E0ED4A9F26E7 /* libPods-ChatDemo.a */; };
 		FC01FBED1D7A714100F15632 /* GFChatCustomTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = FC01FBEC1D7A714100F15632 /* GFChatCustomTextView.m */; };
+		FC01FBF21D7A876C00F15632 /* CALayer+KCExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = FC01FBEF1D7A876C00F15632 /* CALayer+KCExtension.m */; };
+		FC01FBF31D7A876C00F15632 /* UIView+KCExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = FC01FBF11D7A876C00F15632 /* UIView+KCExtension.m */; };
 		FC249F8E1D79D8800066AB60 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FC249F8D1D79D8800066AB60 /* main.m */; };
 		FC249F911D79D8800066AB60 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC249F901D79D8800066AB60 /* AppDelegate.m */; };
 		FC249F991D79D8800066AB60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC249F981D79D8800066AB60 /* Assets.xcassets */; };
@@ -42,6 +44,10 @@
 		A22E303C1659185844A05C92 /* Pods-ChatDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChatDemo/Pods-ChatDemo.release.xcconfig"; sourceTree = "<group>"; };
 		FC01FBEB1D7A714100F15632 /* GFChatCustomTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFChatCustomTextView.h; sourceTree = "<group>"; };
 		FC01FBEC1D7A714100F15632 /* GFChatCustomTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFChatCustomTextView.m; sourceTree = "<group>"; };
+		FC01FBEE1D7A876C00F15632 /* CALayer+KCExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+KCExtension.h"; sourceTree = "<group>"; };
+		FC01FBEF1D7A876C00F15632 /* CALayer+KCExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+KCExtension.m"; sourceTree = "<group>"; };
+		FC01FBF01D7A876C00F15632 /* UIView+KCExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+KCExtension.h"; sourceTree = "<group>"; };
+		FC01FBF11D7A876C00F15632 /* UIView+KCExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+KCExtension.m"; sourceTree = "<group>"; };
 		FC249F891D79D8800066AB60 /* ChatDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC249F8D1D79D8800066AB60 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FC249F8F1D79D8800066AB60 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -297,6 +303,10 @@
 		FC249FDC1D79E7390066AB60 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				FC01FBEE1D7A876C00F15632 /* CALayer+KCExtension.h */,
+				FC01FBEF1D7A876C00F15632 /* CALayer+KCExtension.m */,
+				FC01FBF01D7A876C00F15632 /* UIView+KCExtension.h */,
+				FC01FBF11D7A876C00F15632 /* UIView+KCExtension.m */,
 				FC249FDE1D79E7500066AB60 /* UIBarButtonItem+GFBarButtonItem.h */,
 				FC249FDF1D79E7500066AB60 /* UIBarButtonItem+GFBarButtonItem.m */,
 				FC249FE21D79E84C0066AB60 /* UIImage+GFImage.h */,
@@ -467,6 +477,7 @@
 			files = (
 				FC249FEB1D79FC0B0066AB60 /* GFChatInputView.m in Sources */,
 				FC249FE41D79E84C0066AB60 /* UIImage+GFImage.m in Sources */,
+				FC01FBF21D7A876C00F15632 /* CALayer+KCExtension.m in Sources */,
 				FC249FB81D79D9410066AB60 /* GFBaseViewController.m in Sources */,
 				FC249FD01D79DD400066AB60 /* GFNetworkConst.m in Sources */,
 				FC249FDA1D79E2430066AB60 /* GFHomeChatTableViewController.m in Sources */,
@@ -478,6 +489,7 @@
 				FC249F911D79D8800066AB60 /* AppDelegate.m in Sources */,
 				FC249FE01D79E7500066AB60 /* UIBarButtonItem+GFBarButtonItem.m in Sources */,
 				FC249FE81D79EFAF0066AB60 /* GFChatTitleView.m in Sources */,
+				FC01FBF31D7A876C00F15632 /* UIView+KCExtension.m in Sources */,
 				FC249F8E1D79D8800066AB60 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

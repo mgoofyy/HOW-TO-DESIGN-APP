@@ -9,13 +9,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ChatDemo/Base/ViewController/GFBaseViewController.m"
-            timestampString = "494565239.710379"
+            filePath = "ChatDemo/Class/View/GFChatInputView.m"
+            timestampString = "494569585.231152"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "48"
-            endingLineNumber = "48"
-            landmarkName = "-viewDidLoad"
+            startingLineNumber = "104"
+            endingLineNumber = "104"
+            landmarkName = "-changeInputTypeAction:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -25,13 +25,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ChatDemo/Base/ViewController/GFBaseViewController.m"
-            timestampString = "494565174.455697"
+            filePath = "ChatDemo/Class/View/GFChatInputView.m"
+            timestampString = "494569585.231152"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
-            landmarkName = "-configBackgroundView"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
+            landmarkName = "-configCurrentView"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
