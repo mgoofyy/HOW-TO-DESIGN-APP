@@ -18,7 +18,7 @@
 {
     self = [super init];
     if (self) {
-        
+        [self configGestureRecognize];
     }
     return self;
 }
@@ -28,7 +28,7 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        
+        [self configGestureRecognize];
     }
     return self;
 }

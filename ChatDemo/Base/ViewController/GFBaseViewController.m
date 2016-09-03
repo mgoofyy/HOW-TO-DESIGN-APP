@@ -10,18 +10,46 @@
 
 @interface GFBaseViewController ()
 
+@property (nonatomic,strong) UIImageView *backgroundImageView;
+
 @end
 
 @implementation GFBaseViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
+#pragma mark - lazy load
+
+- (UIImageView *)backgroundImageView {
+    if (!_backgroundImageView) {
+        _backgroundImageView = [UIImageView new];
+        _backgroundImageView.contentMode = UIViewContentModeCenter;
+    }
+    return _backgroundImageView;
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark - configView
+- (void)configBackgroundView {
+    [self.view addSubview:self.backgroundImageView];
+    [_backgroundImageView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.left.right.bottom.mas_equalTo(0);
+    }];
+}
+
+#pragma mark - set
+
+- (void)setBackgroundImage:(UIImage *)backgroundImage {
+    [self configBackgroundView];
+    _backgroundImageView.image = backgroundImage;
+    _backgroundImageView.contentMode = UIViewContentModeScaleAspectFill;
+    [_backgroundImageView sizeToFit];
+    
+}
+
+#pragma mark - system load function
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    // Do any additional setup after loading the view.
 }
 
 @end

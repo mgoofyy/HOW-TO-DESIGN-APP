@@ -32,6 +32,10 @@
     self.navigationItem.titleView = self.navigationTitleView;
     _navigationTitleView.mainTitle = @"我是一个小黄瓜";
     _navigationTitleView.subTitle = @"4G在线";
+    
+    _navigationTitleView.touchCurrentView = ^{
+        NSLog(@"___________%s",__func__);
+    };
 }
 
 #pragma mark - system load function
@@ -41,6 +45,7 @@
     
     [self configView];
     [self configNavigation];
+    self.backgroundImage = [UIImage imageNamed:@"chat_bg_01"];
 }
 
 

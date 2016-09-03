@@ -10,4 +10,9 @@
 
 @interface GFBaseViewController : UIViewController
 
+/**
+ *  当前页面的背景颜色
+ */
+@property (nonatomic,strong) UIImage *backgroundImage;
+
 @end
