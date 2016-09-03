@@ -22,11 +22,9 @@
     [self configLaunchLog];
     
     [self configRootViewController];
-    
+
     return YES;
 }
-
-
 
 - (void)configRootViewController {
     self.window = [[UIWindow alloc] initWithFrame:SCREEN_BOUND];
@@ -35,8 +33,16 @@
     [self.window makeKeyAndVisible];
 }
 
+- (void)configIQKeyboardManager {
+    [[IQKeyboardManager sharedManager] setToolbarDoneBarButtonItemText:@"↓"];
+    [[IQKeyboardManager sharedManager] disableDistanceHandlingInViewControllerClass:[GFHomeChatTableViewController class]];
+    [[IQKeyboardManager sharedManager] disableToolbarInViewControllerClass:[GFHomeChatTableViewController class]];
+}
+
 - (void)configLaunchLog {
     GFLog(@"APP网络请求ROOT_URL=%@",GFAPIRootBsseURL);
 }
+
+
 
 @end

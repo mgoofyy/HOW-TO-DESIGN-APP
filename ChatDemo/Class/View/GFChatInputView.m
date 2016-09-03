@@ -74,19 +74,19 @@
     
     [_changeButton mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.mas_equalTo(5);
-        make.top.mas_equalTo(8);
+        make.centerY.mas_equalTo(self.mas_centerY);
         make.width.height.mas_equalTo(30);
     }];
     
     [_moreButton mas_makeConstraints:^(MASConstraintMaker *make) {
         make.right.mas_equalTo(-5);
-        make.top.mas_equalTo(_changeButton.mas_top);
+        make.centerY.mas_equalTo(self.mas_centerY);
         make.width.height.mas_equalTo(30);
     }];
     
     [_emojiButton mas_makeConstraints:^(MASConstraintMaker *make) {
         make.right.mas_equalTo(_moreButton.mas_left).offset(-5);
-        make.top.mas_equalTo(_changeButton.mas_top);
+        make.centerY.mas_equalTo(self.mas_centerY);
         make.width.height.mas_equalTo(30);
     }];
     

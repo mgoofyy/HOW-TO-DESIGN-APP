@@ -10,6 +10,6 @@
 
 @interface GFBaseTableViewController : GFBaseViewController
 
-@property (nonatomic,strong) UITableView *tableView;
+//@property (nonatomic,strong) UITableView *tableView;
 
 @end

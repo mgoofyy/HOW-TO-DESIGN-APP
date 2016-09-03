@@ -29,3 +29,4 @@
 //Pod
 
 #import <Masonry/Masonry.h>
+#import <IQKeyboardManager/IQKeyboardManager.h>

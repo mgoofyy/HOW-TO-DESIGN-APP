@@ -8,6 +8,6 @@
 
 #import "GFBaseTableViewController.h"
 
-@interface GFHomeChatTableViewController : GFBaseTableViewController
+@interface GFHomeChatTableViewController : UIViewController
 
 @end

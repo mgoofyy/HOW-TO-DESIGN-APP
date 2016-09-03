@@ -16,16 +16,16 @@
 
 #pragma mark - lazy load 
 
-- (UITableView *)tableView {
-    if (!_tableView) {
-        _tableView = [[UITableView alloc] init];
-        _tableView.delegate = self;
-//        _tableView.separatorColor = nil;
-//        _tableView.backgroundColor = nil;
-//        _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-    }
-    return _tableView;
-}
+//- (UITableView *)tableView {
+//    if (!_tableView) {
+//        _tableView = [[UITableView alloc] init];
+//        _tableView.delegate = self;
+////        _tableView.separatorColor = nil;
+////        _tableView.backgroundColor = nil;
+////        _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+//    }
+//    return _tableView;
+//}
 
 #pragma mark - configView
 
@@ -34,12 +34,12 @@
 }
 
 - (void)configTableView {
-    [self.view addSubview:self.tableView];
-    [_tableView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.right.mas_equalTo(0);
-        make.top.mas_equalTo(0);
-        make.bottom.mas_equalTo(-44);
-    }];
+//    [self.view addSubview:self.tableView];
+//    [_tableView mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.left.right.mas_equalTo(0);
+//        make.top.mas_equalTo(0);
+//        make.bottom.mas_equalTo(-44);
+//    }];
     
     
 }
