@@ -109,7 +109,7 @@
     keyboardRect = [(notification.userInfo)[UIKeyboardFrameEndUserInfoKey] CGRectValue];
     keyboardRect = [self.view convertRect:keyboardRect fromView:nil];
 
-    [UIView animateWithDuration:0.25 animations:^{
+    [UIView animateWithDuration:0.3 animations:^{
         [_chatInputView mas_remakeConstraints:^(MASConstraintMaker *make) {
             make.left.right.mas_equalTo(0);
             make.height.mas_equalTo(Edit_View_Height);
@@ -126,8 +126,8 @@
     keyboardRect = [notification.userInfo[UIKeyboardFrameEndUserInfoKey] CGRectValue];
     keyboardRect = [self.view convertRect:keyboardRect fromView:nil];
     
-    [UIView animateWithDuration:0.25 animations:^{
-        self.tableView.kc_height = SCREEN_HEIGHT - 49;
+    [UIView animateWithDuration:0.3 animations:^{
+        self.tableView.kc_height = SCREEN_HEIGHT - Edit_View_Height;
         [_chatInputView mas_remakeConstraints:^(MASConstraintMaker *make) {
             make.left.right.bottom.mas_equalTo(0);
             make.height.mas_equalTo(Edit_View_Height);

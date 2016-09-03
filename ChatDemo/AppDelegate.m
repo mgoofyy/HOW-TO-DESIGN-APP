@@ -23,6 +23,7 @@
     
     [self configRootViewController];
 
+    [self configIQKeyboardManager];
     return YES;
 }
 

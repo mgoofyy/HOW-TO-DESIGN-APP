@@ -126,6 +126,7 @@
     sender.selected = !sender.isSelected;
     _chatTextView.hidden = sender.isSelected;
     _audioButton.hidden = !sender.isSelected;
+    !sender.selected ? [_chatTextView becomeFirstResponder] : [_chatTextView resignFirstResponder];
 }
 
 - (void)emojiAction:(UIButton *)sender {
