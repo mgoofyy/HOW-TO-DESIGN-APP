@@ -27,6 +27,10 @@
 		FC249FE41D79E84C0066AB60 /* UIImage+GFImage.m in Sources */ = {isa = PBXBuildFile; fileRef = FC249FE31D79E84C0066AB60 /* UIImage+GFImage.m */; };
 		FC249FE81D79EFAF0066AB60 /* GFChatTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = FC249FE71D79EFAF0066AB60 /* GFChatTitleView.m */; };
 		FC249FEB1D79FC0B0066AB60 /* GFChatInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = FC249FEA1D79FC0B0066AB60 /* GFChatInputView.m */; };
+		FC409BEB1D7AB76600413CCC /* GFBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FC409BEA1D7AB76600413CCC /* GFBaseTableViewCell.m */; };
+		FC409BEE1D7AB8FC00413CCC /* GFChatMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FC409BED1D7AB8FC00413CCC /* GFChatMessageCell.m */; };
+		FC409BF21D7AB9FD00413CCC /* MLEmojiLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = FC409BF11D7AB9FD00413CCC /* MLEmojiLabel.m */; };
+		FC409BF51D7ABBFF00413CCC /* GFMessageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FC409BF41D7ABBFF00413CCC /* GFMessageModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +91,14 @@
 		FC249FE71D79EFAF0066AB60 /* GFChatTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFChatTitleView.m; sourceTree = "<group>"; };
 		FC249FE91D79FC0B0066AB60 /* GFChatInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFChatInputView.h; sourceTree = "<group>"; };
 		FC249FEA1D79FC0B0066AB60 /* GFChatInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFChatInputView.m; sourceTree = "<group>"; };
+		FC409BE91D7AB76600413CCC /* GFBaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFBaseTableViewCell.h; sourceTree = "<group>"; };
+		FC409BEA1D7AB76600413CCC /* GFBaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFBaseTableViewCell.m; sourceTree = "<group>"; };
+		FC409BEC1D7AB8FC00413CCC /* GFChatMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFChatMessageCell.h; sourceTree = "<group>"; };
+		FC409BED1D7AB8FC00413CCC /* GFChatMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFChatMessageCell.m; sourceTree = "<group>"; };
+		FC409BF01D7AB9FD00413CCC /* MLEmojiLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLEmojiLabel.h; sourceTree = "<group>"; };
+		FC409BF11D7AB9FD00413CCC /* MLEmojiLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLEmojiLabel.m; sourceTree = "<group>"; };
+		FC409BF31D7ABBFF00413CCC /* GFMessageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GFMessageModel.h; path = ChatDemo/Class/View/GFMessageModel.h; sourceTree = SOURCE_ROOT; };
+		FC409BF41D7ABBFF00413CCC /* GFMessageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GFMessageModel.m; path = ChatDemo/Class/View/GFMessageModel.m; sourceTree = SOURCE_ROOT; };
 		FD225981A975E0ED4A9F26E7 /* libPods-ChatDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ChatDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -186,7 +198,7 @@
 			children = (
 				FC249FB31D79D9140066AB60 /* Model */,
 				FC249FB41D79D9140066AB60 /* View */,
-				FC249FB51D79D9140066AB60 /* ViewController */,
+				FC249FB51D79D9140066AB60 /* Controller */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -205,11 +217,13 @@
 			children = (
 				FC249FBC1D79D97C0066AB60 /* GFBaseView.h */,
 				FC249FBD1D79D97C0066AB60 /* GFBaseView.m */,
+				FC409BE91D7AB76600413CCC /* GFBaseTableViewCell.h */,
+				FC409BEA1D7AB76600413CCC /* GFBaseTableViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
 		};
-		FC249FB51D79D9140066AB60 /* ViewController */ = {
+		FC249FB51D79D9140066AB60 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				FC249FB61D79D9410066AB60 /* GFBaseViewController.h */,
@@ -219,6 +233,7 @@
 				FC249FC21D79DB0A0066AB60 /* GFNavigationController.h */,
 				FC249FC31D79DB0A0066AB60 /* GFNavigationController.m */,
 			);
+			name = Controller;
 			path = ViewController;
 			sourceTree = "<group>";
 		};
@@ -257,7 +272,7 @@
 			children = (
 				FC249FD51D79E2140066AB60 /* View */,
 				FC249FD61D79E2140066AB60 /* ViewController */,
-				FC249FD71D79E2140066AB60 /* ViewModel */,
+				FC249FD71D79E2140066AB60 /* Model */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -271,6 +286,8 @@
 				FC249FEA1D79FC0B0066AB60 /* GFChatInputView.m */,
 				FC01FBEB1D7A714100F15632 /* GFChatCustomTextView.h */,
 				FC01FBEC1D7A714100F15632 /* GFChatCustomTextView.m */,
+				FC409BEC1D7AB8FC00413CCC /* GFChatMessageCell.h */,
+				FC409BED1D7AB8FC00413CCC /* GFChatMessageCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -284,16 +301,20 @@
 			path = ViewController;
 			sourceTree = "<group>";
 		};
-		FC249FD71D79E2140066AB60 /* ViewModel */ = {
+		FC249FD71D79E2140066AB60 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				FC409BF31D7ABBFF00413CCC /* GFMessageModel.h */,
+				FC409BF41D7ABBFF00413CCC /* GFMessageModel.m */,
 			);
+			name = Model;
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		FC249FDB1D79E7390066AB60 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				FC409BEF1D7AB9F500413CCC /* Lib */,
 				FC249FDC1D79E7390066AB60 /* Category */,
 				FC249FDD1D79E7390066AB60 /* ThirdSDK */,
 			);
@@ -321,6 +342,15 @@
 			children = (
 			);
 			path = ThirdSDK;
+			sourceTree = "<group>";
+		};
+		FC409BEF1D7AB9F500413CCC /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				FC409BF01D7AB9FD00413CCC /* MLEmojiLabel.h */,
+				FC409BF11D7AB9FD00413CCC /* MLEmojiLabel.m */,
+			);
+			path = Lib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -479,17 +509,21 @@
 				FC249FE41D79E84C0066AB60 /* UIImage+GFImage.m in Sources */,
 				FC01FBF21D7A876C00F15632 /* CALayer+KCExtension.m in Sources */,
 				FC249FB81D79D9410066AB60 /* GFBaseViewController.m in Sources */,
+				FC409BEB1D7AB76600413CCC /* GFBaseTableViewCell.m in Sources */,
 				FC249FD01D79DD400066AB60 /* GFNetworkConst.m in Sources */,
 				FC249FDA1D79E2430066AB60 /* GFHomeChatTableViewController.m in Sources */,
 				FC01FBED1D7A714100F15632 /* GFChatCustomTextView.m in Sources */,
+				FC409BF21D7AB9FD00413CCC /* MLEmojiLabel.m in Sources */,
 				FC249FBB1D79D9630066AB60 /* GFBaseTableViewController.m in Sources */,
 				FC249FC41D79DB0A0066AB60 /* GFNavigationController.m in Sources */,
 				FC249FBE1D79D97C0066AB60 /* GFBaseView.m in Sources */,
 				FC249FC11D79D9920066AB60 /* GFBaseModel.m in Sources */,
 				FC249F911D79D8800066AB60 /* AppDelegate.m in Sources */,
+				FC409BF51D7ABBFF00413CCC /* GFMessageModel.m in Sources */,
 				FC249FE01D79E7500066AB60 /* UIBarButtonItem+GFBarButtonItem.m in Sources */,
 				FC249FE81D79EFAF0066AB60 /* GFChatTitleView.m in Sources */,
 				FC01FBF31D7A876C00F15632 /* UIView+KCExtension.m in Sources */,
+				FC409BEE1D7AB8FC00413CCC /* GFChatMessageCell.m in Sources */,
 				FC249F8E1D79D8800066AB60 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
